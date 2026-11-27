@@ -140,7 +140,6 @@ public class SimonModule extends AbstractModule {
 
         if (pressedColor == expectedColor) {
             currentInputIndex++;
-            // Jika seluruh urutan di stage saat ini selesai
             if (currentInputIndex >= currentStage) {
                 if (currentStage >= fullSequence.size()) {
                     markSolved();
