@@ -33,7 +33,7 @@ public abstract class AbstractModule implements GameModule {
     public void markSolved() {
         if (!this.solved) {
             this.solved = true;
-            if (onSolvedCallback == null) {
+            if (onSolvedCallback != null) {
                 onSolvedCallback.run();
             }
         }
