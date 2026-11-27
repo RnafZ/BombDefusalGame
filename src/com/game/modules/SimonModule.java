@@ -99,7 +99,7 @@ public class SimonModule extends AbstractModule {
                     case GREEN -> Color.BLUE;
                     case YELLOW -> Color.RED;
                 };
-                default -> switch (flashedColor) { // 2 Strike
+                default -> switch (flashedColor) { 
                     case RED -> Color.GREEN;
                     case BLUE -> Color.RED;
                     case GREEN -> Color.YELLOW;
@@ -120,7 +120,7 @@ public class SimonModule extends AbstractModule {
                     case GREEN -> Color.YELLOW;
                     case YELLOW -> Color.GREEN;
                 };
-                default -> switch (flashedColor) { // 2 Strike
+                default -> switch (flashedColor) {
                     case RED -> Color.YELLOW;
                     case BLUE -> Color.GREEN;
                     case GREEN -> Color.BLUE;
