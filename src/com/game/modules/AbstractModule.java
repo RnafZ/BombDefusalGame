@@ -21,19 +21,19 @@ public abstract class AbstractModule implements GameModule {
     public void resetModule() {}
 
     @Override
-    public void setOnSolvedCallBack(Runnable onSolved) {
+    public void setOnSolvedCallback(Runnable onSolved) {
         this.onSolvedCallback = onSolved;
     }
 
     @Override
-    public void setOnStrikeCallBack(Runnable onStrike) {
+    public void setOnStrikeCallback(Runnable onStrike) {
         this.onStrikeCallback = onStrike;
     }
 
     public void markSolved() {
         if (!this.solved) {
             this.solved = true;
-            if (onSolvedCallback == null) {
+            if (onSolvedCallback != null) {
                 onSolvedCallback.run();
             }
         }

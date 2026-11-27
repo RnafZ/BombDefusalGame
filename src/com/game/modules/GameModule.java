@@ -9,6 +9,6 @@ public interface GameModule {
     void generatePuzzle();
     void resetModule();
 
-    void setOnSolvedCallBack(Runnable onSolved);
-    void setOnStrikeCallBack(Runnable onStrike);
+    void setOnSolvedCallback(Runnable onSolved);
+    void setOnStrikeCallback(Runnable onStrike);
 }
